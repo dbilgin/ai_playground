@@ -58,6 +58,9 @@ python text_classification_app.py
 
 # Text generation app
 python text_generation_app.py
+
+# Text generation app with db support
+python db_generation_app.py
 ```
 
 ## Troubleshooting

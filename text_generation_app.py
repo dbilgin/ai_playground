@@ -1,7 +1,8 @@
 import gradio as gr
-from transformers import AutoTokenizer, pipeline
+from transformers import AutoTokenizer
+from transformers.pipelines import pipeline
 
-SYSTEM = """You are a helpful assistant that can answer questions about AI."""
+SYSTEM = """You are a concise AI tutor; use the supplied context if it helps."""
 
 model_id = "mistralai/Mistral-7B-Instruct-v0.3"
 tok  = AutoTokenizer.from_pretrained(model_id)
@@ -27,8 +28,13 @@ def chat(msg, history=None):
     prompt = tok.apply_chat_template(messages,
                                      tokenize=False,
                                      add_generation_prompt=True)
-
-    gen   = pipe(prompt, max_new_tokens=256, eos_token_id=tok.eos_token_id, temperature=0.7, top_p=0.9)[0]["generated_text"]
+    gen = pipe(
+        prompt,
+        max_new_tokens=256,
+        eos_token_id=tok.eos_token_id,
+        temperature=0.7,
+        top_p=0.9
+    )[0]["generated_text"]
     reply = gen[len(prompt):].strip()
     history.append((msg, reply))
     return history, history
@@ -38,3 +44,4 @@ gr.Interface(
     inputs=["text", gr.State()],
     outputs=[gr.Chatbot(), gr.State()],
 ).launch()
+
