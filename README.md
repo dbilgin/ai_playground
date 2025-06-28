@@ -61,6 +61,9 @@ python text_generation_app.py
 
 # Text generation app with db support
 python db_generation_app.py
+
+# Image generation with diffusers
+python image_generation_app.py
 ```
 
 ## Troubleshooting
