@@ -1,0 +1,120 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Model files and training outputs
+trained_models/
+checkpoints/
+runs/
+logs/
+wandb/
+
+# Large model files
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.model
+
+# Tokenizer files (if large)
+tokenizer.json
+vocab.txt
+
+# Dataset cache
+.cache/
+datasets/
+data/
+
+# Hugging Face cache
+~/.cache/huggingface/
+
+# API keys and secrets
+*.key
+*.props
+.env
+.env.local
+.env.*.local
+config.ini
+secrets.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Gradio temporary files
+gradio_cached_examples/
+flagged/
+
+# TensorBoard logs
+tensorboard_logs/
+tb_logs/
+
+# CUDA cache
+.nv/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.log
+
+# Large datasets
+*.parquet
+*.arrow
+*.csv
+*.json.gz
+*.tar.gz
+*.zip
+
+# Backup files
+*.bak
+*.backup
