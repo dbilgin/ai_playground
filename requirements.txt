@@ -11,4 +11,4 @@ sentence_transformers>=4.1.0
 sentencepiece>=0.2.0
 diffusers>=0.34.0
 protobuf<6.0.0
-fsspec==2025.3.2
+fsspec==2025.2.0
