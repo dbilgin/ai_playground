@@ -12,3 +12,4 @@ sentencepiece>=0.2.0
 diffusers>=0.34.0
 protobuf<6.0.0
 fsspec==2025.2.0
+gcsfs==2025.2.0
