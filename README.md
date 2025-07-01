@@ -35,37 +35,6 @@ You need a Hugging Face account and API token to download models and datasets.
 
 **Documentation**: [Hugging Face Token Authentication](https://huggingface.co/docs/huggingface_hub/quick-start#authentication)
 
-## Usage
-
-### Basic Pipeline Demo
-```bash
-python main.py
-```
-
-### Train Models
-```bash
-# Text classification (sentiment analysis)
-python text_classification_trainer.py
-
-# Text generation (with LoRA fine-tuning)
-python text_generation_trainer.py
-```
-
-### Run Web Apps
-```bash
-# Sentiment analysis app
-python text_classification_app.py
-
-# Text generation app
-python text_generation_app.py
-
-# Text generation app with db support
-python db_generation_app.py
-
-# Image generation with diffusers
-python image_generation_app.py
-```
-
 ## Troubleshooting
 
 **CUDA Out of Memory**: Reduce batch size in trainer files or use CPU-only mode
